@@ -22,12 +22,12 @@ spec:
       - name: BP_JVM_VERSION
         value: "21"         
       - name: BP_JVM_CDS_ENABLED
-        value: true
+        value: "true"
       - name: BP_SPRING_CLOUD_BINDINGS_DISABLED
-        value: true       
+        value: "true"       
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/gm2552/wfd-cds-preview
       ref:
         branch: main
-    subPath: where-for-dinner-crawler
+    subPath: workloads/where-for-dinner-crawler

@@ -21,7 +21,7 @@ spec:
         value: "21"                
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/gm2552/wfd-cds-preview
       ref:
         branch: main
-    subPath: where-for-dinner-crawler
+    subPath: workloads/where-for-dinner-crawler
