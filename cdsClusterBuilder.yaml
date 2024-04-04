@@ -1,0 +1,19 @@
+apiVersion: kpack.io/v1alpha2
+kind: ClusterBuilder
+metadata:
+  annotations:
+    kapp.k14s.io/identity: v1;/kpack.io/ClusterBuilder/cds;kpack.io/v1alpha2
+  name: cds
+spec:
+  order:
+  - group:
+    - id: paketo-buildpacks/java
+      version: '{{.version}}'
+  serviceAccountRef:
+    name: kp-default-repository-serviceaccount
+    namespace: kpack
+  stack:
+    kind: ClusterStack
+    name: base-jammy
+  store: {}
+  tag: reg.perfect300rock.com/tapdev/build-service

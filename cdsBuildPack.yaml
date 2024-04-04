@@ -1,0 +1,9 @@
+apiVersion: kpack.io/v1alpha2
+kind: ClusterBuildpack
+metadata:
+  name: cds-java
+spec:
+  serviceAccountRef:
+    name: dependencies-pull-serviceaccount
+    namespace: build-service
+  image: anthonydahanne/java:cds-march-27
