@@ -72,6 +72,6 @@ kubectl apply -f workloads/where-for-dinner-crawler/config/workload.yaml
 The following charts illustrate representitive startup time improvements using resource limits of 1.5 CPUs and as well as comparisons with no resource limits.  The
 following charts uses AWS `t3.2xlarge` types for each worker node in the cluster.
 
-![](images/WFD Limited.png)
+![](images/WFDLimited.png)
 
-![](images/WFD No Limits.png)
+![](images/WFDNoLimits.png)
