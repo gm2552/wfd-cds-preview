@@ -105,4 +105,15 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://testservice.placeholder.com/test
-          
+
+---
+
+spring:
+  config.activate.on-profile: training-run
+
+  sql.init.mode: never
+
+  r2dbc: 
+    url: r2dbc:mariadb://maria/dinner
+    username: training
+    password: run

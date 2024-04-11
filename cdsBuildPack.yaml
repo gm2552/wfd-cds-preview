@@ -6,4 +6,4 @@ spec:
   serviceAccountRef:
     name: dependencies-pull-serviceaccount
     namespace: build-service
-  image: anthonydahanne/java:cds-march-27
+  image: anthonydahanne/java:cds-april-4
