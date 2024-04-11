@@ -1,7 +1,7 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: where-for-dinner-availability-mariadb2training
+  name: where-for-dinner-availability-h2training
   labels:
     apps.tanzu.vmware.com/workload-type: server
     apps.tanzu.vmware.com/has-tests: "true"
